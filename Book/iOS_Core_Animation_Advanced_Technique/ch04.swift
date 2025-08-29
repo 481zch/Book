@@ -170,7 +170,7 @@ import Then
 //    }
 //}
 
-//// MARK: 组透明已经默认开启，长时候无法关闭
+//// MARK: 组透明已经默认开启，尝试后无法关闭
 //final class Ch04VC: UIViewController {
 //    
 //    private let containerView = UIView()
