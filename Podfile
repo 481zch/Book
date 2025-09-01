@@ -10,5 +10,6 @@ target 'Book' do
   pod 'Then'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'SDWebImage'
 
 end
