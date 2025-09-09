@@ -16,13 +16,17 @@ final class Ch10VC: UIViewController {
         super.viewDidLoad()
         view.addSubview(containerView)
         containerView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.width.height.equalTo(100)
+            make.center.equalToSuperview()
         }
         
-        let ballImage = UIImage(named: "snowman")!
+        let ballImage = UIImage(named: "basketball")!
         ballView = UIImageView(image: ballImage)
         containerView.addSubview(ballView)
-        
+        ballView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.height.width.equalTo(80)
+        }
         animate()
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(restart))
